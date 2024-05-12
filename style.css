@@ -17,7 +17,7 @@ li {
 	list-style: none;
 }
 .header__banner {
-	background: url('../img/disko.jpeg') center / cover;
+	background: url('./img/disko.jpeg') center / cover;
 	height: 100vh;
 	background-repeat: no-repeat;
 }
