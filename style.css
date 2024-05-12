@@ -1,0 +1,488 @@
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Roboto Condensed', sans-serif;
+	background-color:rgb(190, 173, 173);
+}
+ul {
+	padding-left: 0;
+	margin: 0;
+}
+li {
+	list-style: none;
+}
+.header__banner {
+	background: url('../img/disko.jpeg') center / cover;
+	height: 100vh;
+	background-repeat: no-repeat;
+}
+
+.header__container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.header__container__navbar {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 72px;
+	align-items: center;
+}
+
+.navbar__list {
+	display: flex;
+}
+.navbar__list li {
+	position: relative;
+}
+.navbar__list li::after {
+	position: absolute;
+	content: '';
+	width: 0;
+	height: 2px;
+	bottom: -5px;
+	left: 0;
+	background-color: #000;
+	transition: 300ms;
+}
+.navbar__list li:hover:after {
+	width: 100%;
+}
+.navbar__list li a {
+	text-decoration: none;
+	font-size: 24px;
+	line-height: 28px;
+	color: white
+}
+
+.navbar__list li + li {
+	margin-left: 50px;
+	font-size: 24px;
+	line-height: 28px;
+}
+
+.navbar__contact {
+	display: flex;
+	align-items: center;
+}
+
+.navbar__contact .phone-img {
+	margin-right: 10px;
+}
+
+navbar__contact .phone-number {
+	font-size: 24px;
+	line-height: 28px;
+	color: white;
+}
+
+.header__container__logo {
+	text-align: center;
+	margin-top: 152px;
+}
+
+.header__container__logo h1 {
+	font-size: 250px;
+	line-height: 250px;
+	font-family: 'Festive', cursive;
+	font-weight: 100;
+	color: white;
+}
+.header__container__logo em {
+	font-size: 60px;
+	line-height: 30px;
+	display: flex;
+	justify-content: flex-end;
+	font-weight: 300;
+}
+
+.about__content {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 100px;
+}
+.about__swiper {
+	width: 53%;
+}
+.about {
+	margin-top: 200px;
+	margin-bottom: 200px;
+}
+
+.about__title {
+}
+.about__title h3 {
+	font-size: 96px;
+	line-height: 100px;
+	color:darkred;
+	font-family: 'Festive', cursive;
+	font-weight: 100;
+}
+.about__title em {
+	font-weight: 100;
+	font-size: 24px;
+	line-height: 28px;
+	margin-left: 170px;
+}
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.swiper {
+	width: 90%;
+	height: 70%;
+}
+.swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	background: #fff;
+
+	/* Center slide text vertically */
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+}
+
+.swiper-slide img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.about__about {
+	width: 545px;
+	margin: 50px auto 0 55px;
+}
+
+.about__about__info {
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 21px;
+	margin-bottom: 50px;
+}
+
+.about__about__bold {
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 21px;
+}
+
+.about__about__list {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.about__about__list li {
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 25px;
+}
+
+/* ======================================== */
+
+.venue__container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.venue__container__about {
+	width: 300px;
+	margin: 0 270px 0 auto;
+}
+
+.container__about__title {
+	margin-bottom: 108px;
+	position: relative;
+}
+.container__about__title::before {
+	content: 'from our guests';
+	width: 100px;
+	height: 30px;
+	position: absolute;
+	font-size: 29px;
+	line-height: 28px;
+	font-weight: 100;
+	right: -5%;
+	font-style: italic;
+	bottom: 0;
+}
+.container__about__title h3 {
+	font-size: 96px;
+	line-height: 128px;
+	font-weight: 100;
+	font-family: 'Festive', cursive;
+	color: darkred
+}
+
+.cards__group__card {
+	margin-bottom: 50px;
+}
+.cards__group__card h4 {
+	font-size: 30px;
+	line-height: 20px;
+	margin-bottom: 20px;
+	font-weight: 200px;
+}
+.cards__group__card ul li {
+	font-size: 20px;
+	line-height: 28px;
+	font-weight: 100;
+}
+
+.venue__button a {
+	border: 1px solid darkred;
+	padding: 11px 53px;
+	font-size: 24px;
+	line-height: 28px;
+	text-decoration: none;
+	color: #000;
+	font-weight: 300;
+	transition: 500ms;
+}
+.venue__button a:hover {
+	background-color: darkred;
+	color: #fff;
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+.venue__container__swiper {
+	width: 53%;
+}
+/* ========================================
+ */
+
+.gallery__container {
+	margin-top: 90px;
+}
+
+.gallery__title {
+	margin-bottom: 80px;
+}
+.gallery__title h3 {
+	width: 230px;
+	font-size: 96px;
+	line-height: 128px;
+	color: darkred;
+	font-family: 'Festive', cursive;
+	font-weight: 100;
+	position: relative;
+}
+
+.gallery__title h3::before {
+	position: absolute;
+	font-family: 'Roboto Condensed', sans-serif;
+	width: 100%;
+	color: #000;
+	height: 20%;
+	font-weight: 70px;
+	font-size: 30px;
+	line-height: 24px;
+	font-style: italic;
+	bottom: 5%;
+	right: -55%;
+}
+
+.gallery__about {
+	display: flex;
+}
+
+.gallery__about__info {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	max-width: 400px;
+	margin: 0 0 0 auto;
+}
+
+.gallery__about__info__text p {
+	font-size: 18px;
+	line-height: 21px;
+	font-weight: 100;
+	margin-bottom: 20px;
+}
+
+.gallery__about__info__images {
+	display: flex;
+	flex-direction: column;
+}
+
+.gallery__about__info__images img {
+	margin-left: 15px;
+	height: 190px;
+	width: 190px;
+}
+.gallery__about__info__images__top {
+	margin-bottom: 10px;
+}
+/* ============================================== */
+
+.price {
+	position: relative;
+}
+.price__container {
+	margin-top: 200px;
+}
+
+.price__title h3 {
+	font-size: 96px;
+	line-height: 128px;
+	color: darkred;
+	width: 210px;
+	font-weight: 100;
+	font-family: 'Festive', cursive;
+	position: relative;
+}
+
+.price__title h3::before {
+	content: 'Стоимость услуг';
+	position: absolute;
+	font-family: 'Roboto Condensed', sans-serif;
+	width: 100%;
+	color: #000;
+	height: 20%;
+	font-weight: 100;
+	font-size: 24px;
+	line-height: 28px;
+	font-style: italic;
+	bottom: 0;
+	right: -55%;
+}
+
+.price__info {
+	margin-top: 130px;
+	display: flex;
+}
+
+.price__info__includes {
+	max-width: 40%;
+}
+.price__info div h5 {
+	font-size: 24px;
+	line-height: 28px;
+	font-weight: 400;
+	margin-bottom: 50px;
+}
+
+.price__info ul li {
+	font-size: 18px;
+	line-height: 21px;
+	font-weight: 100;
+	margin-bottom: 20px;
+}
+
+.price__info__notincludes {
+	max-width: 30%;
+	margin-left: 70px;
+}
+
+/* =================================*/
+.blank__container {
+	max-width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 200px;
+}
+
+.blank__form {
+	max-width: 383px;
+	margin: auto auto auto 0;
+}
+
+.blank__form__date h3 {
+	font-size: 100px;
+	line-height: 69px;
+	color: darkred;
+	font-family: 'Festive', cursive;
+	font-weight: 100;
+	text-align: end;
+	margin-bottom: 50px;
+	position: relative;
+}
+
+.blank__form__date h3.date::before {
+	content: 'Создаём';
+	position: absolute;
+	font-family: 'Roboto Condensed', sans-serif;
+	width: 100%;
+	color: #000;
+	height: 20%;
+	font-weight: 100;
+	font-size: 24px;
+	line-height: 28px;
+	font-style: italic;
+	bottom: -10%;
+	right: -25%;
+}
+
+.blank__form__date h3.cost::before {
+	content: 'Воспоминания';
+	position: absolute;
+	font-family: 'Roboto Condensed', sans-serif;
+	width: 100%;
+	color: #000;
+	height: 20%;
+	font-weight: 100;
+	font-size: 24px;
+	line-height: 28px;
+	font-style: italic;
+	bottom: -10%;
+	right: -10%;
+}
+
+.blank__form__input {
+	margin-top: 128px;
+	display: flex;
+	flex-direction: column;
+	width: 383px;
+	text-align: center;
+}
+
+.blank__form__input h4 {
+	font-size: 24px;
+	line-height: 28px;
+	margin-bottom: 50px;
+	font-weight: 400;
+}
+
+.blank__form__input input {
+	outline: 0;
+	background-color: #fff;
+	width: 100%;
+	padding: 14px 0 15px 21px;
+	margin-bottom: 20px;
+	border: 1px solid darkred;
+	border-radius: 30px;
+}
+
+.blank__form__input a {
+	font-size: 24px;
+	line-height: 28px;
+	width: 80%;
+	margin: 0 auto;
+	padding: 12px 0;
+	color: #000;
+	text-decoration: none;
+	border: 1px solid darkred;
+	transition: 400ms;
+}
+
+.blank__form__input a:hover {
+	background-color: darkred;
+	color: #fff;
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
